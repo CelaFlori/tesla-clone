@@ -1,25 +1,24 @@
-import logo from './logo.svg';
-import './App.css';
+import Header from "./components/header/Header";
+import Sidebar from "./components/sidebar/Sidebar";
+import {useState} from "react";
+import Backdrop from "./components/backdrop/Backdrop";
 
-function App() {
+function App({ children }) {
+    const [showSidebar, setShowSidebar] = useState(false)
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+    <>
+        {showSidebar && (
+                <>
+                    <Backdrop onClick={() => setShowSidebar(false)} />
+                    <Sidebar setShowSidebar={setShowSidebar} />
+                </>
+            )}
+        <main className={showSidebar ? 'blur-content' : ''}>
+            <Header setShowSidebar={setShowSidebar} />
+            {children}
+        </main>
+    </>
+  )
 }
 
 export default App;
