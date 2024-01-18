@@ -1,5 +1,5 @@
 :root {
-  --hover-background: rgba(242, 242, 242)
+  --hover-background: rgba(179, 179, 179, 0.2)
 }
 
 body {
@@ -9,6 +9,9 @@ body {
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  overflow-x: hidden;
+  overflow-y: auto;
+  color: white;
 }
 
 code {
