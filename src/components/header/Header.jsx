@@ -13,7 +13,6 @@ export default function Header({ setShowSidebar }) {
     const navigate = useNavigate()
     return(
         <>
-
         <nav>
             <ul className='headerList'>
                 {navElements.map(({ label, route, style = {} }) => (
