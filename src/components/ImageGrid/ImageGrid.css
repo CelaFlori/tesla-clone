@@ -1,0 +1,14 @@
+.grid-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    align-items: center;
+    background-color: black;
+}
+
+.grid-item {
+    text-align: center;
+}
+
+.text {
+    margin-top: 10px;
+}
