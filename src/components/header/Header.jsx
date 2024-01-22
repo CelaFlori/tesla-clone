@@ -2,10 +2,10 @@ import {useNavigate} from "react-router-dom";
 import './Header.css'
 
 export const navElements = [
-    { label: 'TESLA', route: '/', style: { marginRight: 'auto' } },
-    { label: 'Model S', route: '/model_s' },
-    { label: 'Model X', route: '/model_x' },
-    { label: 'Cybertruck', route: '/cybertruck' },
+    { label: 'TESLA', route: '', style: { marginRight: 'auto' } },
+    { label: 'Model S', route: '#modelS' },
+    { label: 'Model X', route: '#modelX' },
+    { label: 'Cybertruck', route: '#cybertruck' },
     { label: 'Menu', route: null, style: { marginLeft: 'auto' } },
 ]
 
@@ -13,7 +13,7 @@ export default function Header({ setShowSidebar }) {
     const navigate = useNavigate()
     return(
         <>
-        <nav>
+        <nav className="header">
             <ul className='headerList'>
                 {navElements.map(({ label, route, style = {} }) => (
                     <li
@@ -27,7 +27,10 @@ export default function Header({ setShowSidebar }) {
                             }
                         }}
                     >
-                        {label}
+
+                        <a href={route}>
+                            {label}
+                        </a>
                     </li>
                 ))}
             </ul>

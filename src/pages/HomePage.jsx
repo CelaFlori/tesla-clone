@@ -3,6 +3,31 @@ import ImageBackgroundSection from "../components/imageBackgroundSection/ImageBa
 import modelSImage from '../assets/model-s.jpg';
 import modelXImage from '../assets/model-x.jpg';
 import cybertruckImage from '../assets/cybertruck.jpg';
+import ModelSPage from "./ModelSPage";
+import ModelXPage from "./ModelXPage";
+import CybertruckPage from "./CybertruckPage";
+
+const featureItems = [
+    { title: '2.3s 0-60', description: 'very fast' },
+    { title: '2.3s 0-60', description: 'very fast' },
+    { title: '2.3s 0-60', description: 'very fast' },
+    { title: '2.3s 0-60', description: 'very fast' },
+];
+
+const homePageSections = [
+    {
+        id: 'modelS',
+        component: <ModelSPage />
+    },
+    {
+        id: 'modelX',
+        component: <ModelXPage />
+    },
+    {
+        id: 'cybertruck',
+        component: <CybertruckPage />
+    },
+]
 
 export default function HomePage() {
     return(
@@ -10,24 +35,14 @@ export default function HomePage() {
             <section className='section'>
         <HomeSectionVideo />
             </section>
-            <section className='section'>
-            <ImageBackgroundSection
-                header='Model S'
-                description='View inventory'
-                backgroundImage={modelSImage} />
-            </section>
-            <section className='section'>
-            <ImageBackgroundSection
-                header='Model X'
-                description='View inventory'
-                backgroundImage={modelXImage} />
-            </section>
-            <section className='section'>
-            <ImageBackgroundSection
-                header='Cybertruck'
-                description='View inventory'
-                backgroundImage={cybertruckImage} />
-            </section>
+            {homePageSections.map((item) => (
+                <section id={item.id} className="section">
+                    {item.component}
+                </section>
+
+            ))}
+
+
         </div>
     )
 }

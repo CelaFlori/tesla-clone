@@ -17,7 +17,9 @@ export default function Sidebar({ showSidebar, setShowSidebar }) {
                             }}
                             key={label}
                         >
-                            {label}
+                            <a href={route} onClick={() => setShowSidebar(false)}>
+                                {label}
+                            </a>
                         </li>
                     )
                 })}

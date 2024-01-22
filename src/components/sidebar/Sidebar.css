@@ -26,10 +26,16 @@ nav.sidebar ul {
     list-style-type: none;
 }
 
+
 nav.sidebar ul li {
     padding: 10px;
     cursor: pointer;
 }
+nav.sidebar ul li a {
+     color: black;
+    text-decoration: none;
+ }
+
 nav.sidebar ul li:hover,
 nav.sidebar button {
     background-color: var(--hover-background);

@@ -12,6 +12,11 @@ nav .headerList li {
     border-radius: 10%;
 }
 
+nav .headerList li a {
+    color: white;
+    text-decoration: none;
+}
+
 nav .headerList li:first-of-type {
     font-size: 20px;
 }
@@ -25,4 +30,5 @@ nav {
     top: 0;
     right: 0;
     width: 100vw;
+    z-index: 200;
 }
