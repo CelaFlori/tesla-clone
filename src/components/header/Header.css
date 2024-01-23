@@ -2,7 +2,7 @@ nav .headerList {
     list-style-type: none;
     display: flex;
     justify-content: center;
-    padding: 10px;
+    padding: 10px 40px;
 }
 
 nav .headerList li {

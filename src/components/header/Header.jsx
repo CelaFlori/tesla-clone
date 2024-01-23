@@ -6,6 +6,7 @@ export const navElements = [
     { label: 'Model S', route: '#modelS' },
     { label: 'Model X', route: '#modelX' },
     { label: 'Cybertruck', route: '#cybertruck' },
+    { label: 'Shop', route: '#shop' },
     { label: 'Menu', route: null, style: { marginLeft: 'auto' } },
 ]
 
@@ -27,7 +28,6 @@ export default function Header({ setShowSidebar }) {
                             }
                         }}
                     >
-
                         <a href={route}>
                             {label}
                         </a>

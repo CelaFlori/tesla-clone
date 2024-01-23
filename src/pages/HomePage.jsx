@@ -2,6 +2,7 @@ import HomeSectionVideo from "../components/homeSectionVideo/HomeSectionVideo";
 import ModelSPage from "./ModelSPage";
 import ModelXPage from "./ModelXPage";
 import CybertruckPage from "./CybertruckPage";
+import ShopPage from "./ShopPage";
 
 const featureItems = [
     { title: '2.3s 0-60', description: 'very fast' },
@@ -22,6 +23,10 @@ const homePageSections = [
     {
         id: 'cybertruck',
         component: <CybertruckPage />
+    },
+    {
+        id: 'shop',
+        component: <ShopPage />
     },
 ]
 

@@ -10,6 +10,7 @@ import HomePage from "./pages/HomePage";
 import ModelSPage from "./pages/ModelSPage";
 import ModelXPage from "./pages/ModelXPage";
 import CybertruckPage from "./pages/CybertruckPage";
+import ShopPage from "./pages/ShopPage";
 export const router = createBrowserRouter([
   {
     path: '/',
@@ -42,7 +43,15 @@ export const router = createBrowserRouter([
           <CybertruckPage />
         </App>
     ),
-  }
+  },
+    {
+        path: '/shop',
+        element: (
+            <App>
+                <ShopPage />
+            </App>
+        ),
+    }
 ]);
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
