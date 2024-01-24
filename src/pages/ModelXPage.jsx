@@ -12,7 +12,7 @@ const featureItems = [
 ];
 export default function ModelXPage() {
     return (
-        <div className='container'>
+        <div className=' container'>
             <section className='section'>
                 <ImageBackgroundSection
                     header='Model X'

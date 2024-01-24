@@ -11,6 +11,7 @@ import ModelSPage from "./pages/ModelSPage";
 import ModelXPage from "./pages/ModelXPage";
 import CybertruckPage from "./pages/CybertruckPage";
 import ShopPage from "./pages/ShopPage";
+import { RecoilRoot } from 'recoil';
 export const router = createBrowserRouter([
   {
     path: '/',
@@ -57,7 +58,9 @@ export const router = createBrowserRouter([
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <React.StrictMode>
+      <RecoilRoot>
     <RouterProvider router={router} />
+      </RecoilRoot>
   </React.StrictMode>,
 );
 

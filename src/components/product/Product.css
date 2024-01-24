@@ -7,7 +7,13 @@
     padding: 20px;
     border: 1px solid #ccc;
     border-radius: 4px;
-    flex-basis: calc(100% / 4);
+    flex-basis: calc(100% / 4); /* Maximum 4 items per row */
+    box-shadow: 0 0 20px rgba(248, 248, 248, 0.4);
+}
+
+.product:hover {
+    transform: scale(1.03);
+    transition: all 0.3s;
 }
 
 .product-image {

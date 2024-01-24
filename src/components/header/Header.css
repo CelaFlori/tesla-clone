@@ -32,3 +32,6 @@ nav {
     width: 100vw;
     z-index: 200;
 }
+.cart-items-count {
+    color: white;
+}

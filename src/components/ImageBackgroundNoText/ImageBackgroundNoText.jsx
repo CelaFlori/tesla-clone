@@ -1,8 +1,8 @@
-export default function ImageBackgroundNoText({ backgroundImage}) {
-    return(
+export default function ImageBackgroundNoText({ backgroundImage }) {
+    return (
         <div
-            className='image-background'
+            className="image-background"
             style={{ backgroundImage: `url(${backgroundImage})` }}
         />
-    )
+    );
 }
