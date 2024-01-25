@@ -29,8 +29,8 @@ export default function ModelXPage() {
                 <ImageGrid
                     image1={modelXImage}
                     image2={teslaChargerImage}
-                    text1='Stay Connected - Instantly connect with multi-device Bluetooth, or fast charge devices with wireless and 36-watt USB-C charging.'
-                    text2='Sublime Sound - A 22-speaker, 960-watt audio system with Active Road Noise Reduction offers the best listening experience wherever you are.'
+                    text1='High strength, Class II steel tow bar. Capable of towing up to 5,000 lbs.'
+                    text2='Input your zip code to search for Tesla showrooms and schedule a Demo Drive.'
                 />
             </section>
         </div>

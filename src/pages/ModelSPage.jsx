@@ -31,8 +31,8 @@ export default function ModelSPage() {
                 <ImageGrid
                 image1={modelSImage}
                 image2={teslaChargerImage}
-                text1='Stay Connected - Instantly connect with multi-device Bluetooth, or fast charge devices with wireless and 36-watt USB-C charging.'
-                text2='Sublime Sound - A 22-speaker, 960-watt audio system with Active Road Noise Reduction offers the best listening experience wherever you are.'
+                text1='All functionality of Basic Autopilot and Enhanced Autopilot.'
+                text2='Traffic Light and Stop Sign Control'
                 />
             </section>
         </div>

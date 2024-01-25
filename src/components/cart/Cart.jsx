@@ -23,7 +23,7 @@ export default function Cart() {
                     <li key={item.id}>
                         <div>
                             <div>{item.title}</div>
-                            <div>{item.price}</div>
+                            <div>${item.price}</div>
                             <button onClick={() => removeFromCart(item.id)}>
                                 Remove From Cart
                             </button>

@@ -31,8 +31,8 @@ export default function ModelYPage() {
                 <ImageGrid
                     image1={ModelYImage}
                     image2={teslaChargerImage}
-                    text1='Stay Connected - Instantly connect with multi-device Bluetooth, or fast charge devices with wireless and 36-watt USB-C charging.'
-                    text2='Sublime Sound - A 22-speaker, 960-watt audio system with Active Road Noise Reduction offers the best listening experience wherever you are.'
+                    text1='Electronic fold-flat releases in trunk.'
+                    text2='High strength, Class II steel tow bar capable of towing up to 3,500 lbs'
                 />
             </section>
         </div>
