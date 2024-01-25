@@ -1,13 +1,13 @@
-import './HomeSectionVideo.css'
-import teslaVid from '../../assets/tesla-vid.mp4'
+import './HomeSectionVideo.css';
+import teslaVid from '../../assets/tesla-vid.mp4';
 
 export default function HomeSectionVideo() {
-    return(
+    return (
         <div>
-            <video className='video-background' autoPlay muted loop>
-                <source src={teslaVid} type='video/mp4' />
+            <video className="video-background" autoPlay muted loop>
+                <source src={teslaVid} type="video/mp4" />
             </video>
-            <div className='overlay'>
+            <div className="overlay">
                 <div>
                     <h1>Experience Tesla</h1>
                     <h5>Schedule a demo drive today</h5>
@@ -18,5 +18,4 @@ export default function HomeSectionVideo() {
             </div>
         </div>
     );
-};
-
+}

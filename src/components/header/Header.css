@@ -6,15 +6,10 @@ nav .headerList {
 }
 
 nav .headerList li {
-    margin: 5px 10px;
+    padding: 5px 10px;
     cursor: pointer;
     transition: all 0.3s;
     border-radius: 10%;
-}
-
-nav .headerList li a {
-    color: white;
-    text-decoration: none;
 }
 
 nav .headerList li:first-of-type {
@@ -31,7 +26,4 @@ nav {
     right: 0;
     width: 100vw;
     z-index: 200;
-}
-.cart-items-count {
-    color: white;
 }

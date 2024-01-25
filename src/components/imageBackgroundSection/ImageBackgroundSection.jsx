@@ -1,18 +1,24 @@
 import './ImageBackgroundSection.css';
-export default function ImageBackgroundSection({ backgroundImage, header, description, featureItems = [] }) {
-    return(
+
+export default function ImageBackgroundSection({
+                                                   backgroundImage,
+                                                   header,
+                                                   description,
+                                                   featureItems = [],
+                                               }) {
+    return (
         <div
-            className='image-background'
+            className="image-background"
             style={{ backgroundImage: `url(${backgroundImage})` }}
-           >
-            <div className='overlay'>
-                <div className='top-section'>
+        >
+            <div className="overlay">
+                <div className="top-section">
                     <h2>{header}</h2>
                     <p>{description}</p>
                 </div>
-                <div className='bottom-section'>
+                <div className="bottom-section">
                     {featureItems.length > 0 && (
-                        <ul className='feature-items'>
+                        <ul className="feature-items">
                             {featureItems.map(({ title, description }) => (
                                 <li key={title}>
                                     <h6>{title}</h6>
@@ -28,5 +34,5 @@ export default function ImageBackgroundSection({ backgroundImage, header, descri
                 </div>
             </div>
         </div>
-    )
+    );
 }

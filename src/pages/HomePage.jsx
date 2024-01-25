@@ -2,14 +2,11 @@ import HomeSectionVideo from "../components/homeSectionVideo/HomeSectionVideo";
 import ModelSPage from "./ModelSPage";
 import ModelXPage from "./ModelXPage";
 import CybertruckPage from "./CybertruckPage";
+import ModelYPage from "./ModelYPage";
+import Model3Page from './Model3Page'
 import ShopPage from "./ShopPage";
 
-const featureItems = [
-    { title: '2.3s 0-60', description: 'very fast' },
-    { title: '2.3s 0-60', description: 'very fast' },
-    { title: '2.3s 0-60', description: 'very fast' },
-    { title: '2.3s 0-60', description: 'very fast' },
-];
+
 
 const homePageSections = [
     {
@@ -25,6 +22,14 @@ const homePageSections = [
         component: <CybertruckPage />
     },
     {
+        id: 'modelY',
+        component: <ModelYPage />
+    },
+    {
+        id: 'model3',
+        component: <Model3Page />
+    },
+    {
         id: 'shop',
         component: <ShopPage />
     },
@@ -32,7 +37,7 @@ const homePageSections = [
 
 export default function HomePage() {
     return(
-        <div className='container'>
+        <div className='container '>
             <section className='section'>
         <HomeSectionVideo />
             </section>

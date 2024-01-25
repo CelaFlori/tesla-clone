@@ -5,10 +5,9 @@ import teslaChargerImage from '../assets/tesla-charger.jpg'
 import ImageGrid from "../components/ImageGrid/ImageGrid";
 
 const featureItems = [
-    { title: '2.3s 0-60', description: 'very fast' },
-    { title: '2.3s 0-60', description: 'very fast' },
-    { title: '2.3s 0-60', description: 'very fast' },
-    { title: '2.3s 0-60', description: 'very fast' },
+    { title: '405mi', description: 'Range (est.)' },
+    { title: '130mph', description: 'Top Speed' },
+    { title: '3.1sec', description: '0-60 mph' },
 ];
 
 
@@ -18,7 +17,7 @@ export default function ModelSPage() {
             <section className='section'>
                 <ImageBackgroundSection
                     header='Model S'
-                    description='View inventory'
+                    description='From $71,090*'
                     backgroundImage={modelSImage}
                     featureItems={featureItems}
                 />

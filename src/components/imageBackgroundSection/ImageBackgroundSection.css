@@ -28,7 +28,7 @@
 }
 
 .bottom-section button {
-    margin: 0 20px;
+    margin: 0px 20px;
 }
 
 .feature-items {
@@ -37,17 +37,17 @@
     align-items: center;
     list-style-type: none;
     text-align: center;
-    padding: 0;
+    padding: 0px;
 }
 
 .feature-items li {
-    padding: 0 10px;
-    margin: 0 15px;
+    padding: 0px 10px;
+    margin: 0px 15px;
 }
 
 .feature-items h6 {
     font-size: 20px;
-    margin: 0;
+    margin: 0px;
 }
 
 .feature-items p {
